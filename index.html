@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page | Emmanuel Blas Roberto</title>
+    <meta name="description" content="Course home page for Emmanuel Blas Roberto showcasing Web and Computer Programming Certificate course">
+    <meta name="author" content="Emmanuel Blas Roberto">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+     <link rel="stylesheet" href="styles/small.css">
+     <link rel="stylesheet" href="styles/larger.css">
+
+
+    <script src="scripts/navigation.js" defer ></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer ></script>
+
+
+   
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/web-logo.jpg" alt="Web logo"  class="logo-placeholder" width="40" height="40">
+            <span class="site-name">Course Home Page</span>
+        </div>
+
+        <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="chamber/index.html">Chamber Project</a>
+            <a href="final/index.html">Final Project</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Home</h1>
+        <div class="top-content">
+            <section class="card about-card">
+                <h2>About Me</h2>
+                <div class="card-body">
+                    <p>Hello my name is Emmanuel Blas Roberto. I am currently studying Web and Computer Programming. I enjoy learning frontend development and building responsive, accessible web pages.</p>
+                </div>
+            </section>
+
+            <section class="card photo-card">
+                <h2>Student Photo</h2>
+                <div class="card-body image-container">
+                    <img src="images/profile.jpg" alt="My Profile picture" loading="lazy">
+                </div>
+            </section>
+        </div>
+            <section class="card courses-card">
+                <h2>Web Certificate Courses</h2>
+                    <div class="card-body">
+                        <div class="filter-buttons">
+                            <button id="all-btn"  class="active">All Courses</button>
+                            <button id="cse-btn">CSE Courses</button>
+                            <button id="wdd-btn">WDD Courses</button>
+                        </div>
+
+                        <div id="course-container" class="course-grid"></div>
+                        <p id="total-credits" class="credits-info"></p>
+                    </div>
+            </section>
+
+            <section class="social-link">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/emmanuel-blas-roberto-b369972b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+
+                    <a href="https://github.com/EmmanuelBlas-eng/wdd231" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+
+                    <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter fa-2xl"></i>
+                    </a>
+                </div>
+            </section>
+        
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span>Emmanuel Blas Roberto | WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

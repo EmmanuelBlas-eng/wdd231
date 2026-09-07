@@ -1,0 +1,29 @@
+@media screen and (min-width: 650px) {
+    #menu-button {
+        display: none;
+    }
+
+    #nav-menu {
+       display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px 20px;
+        display: inline-block;
+    }
+
+
+  /* Restore side-by-side columns on desktop */
+  .top-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /* Restore 3-column grid for course cards on desktop */
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
