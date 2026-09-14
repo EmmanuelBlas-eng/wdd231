@@ -50,7 +50,7 @@
     "address": "Public Market, Allacapan, Cagayan, Philippines",
     "phone": "(0918) 555-2345",
     "website": "https://nenengsdrygoods.example.com",
-    "image": "..chamber/images/neneng-dry-good.webp",
+    "image": "../chamber/images/neneng-dry-good.webp",
     "membership": 1
   },
   {
