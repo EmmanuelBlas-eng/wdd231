@@ -1,0 +1,284 @@
+:root {
+  --primary-color: #1f3a52;
+  --secondary-color: #8c2a00;
+  --bg-color: #ececec;
+  --card-bg: #dcdcdc;
+  --text-color: #222222;
+  --border-color: #b0b0b0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: var(--text-color);
+}
+
+/* Header */
+header {
+  background-color: var(--bg-color);
+  color: #000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-container img {
+  width: 40px;
+  height: auto;
+}
+
+.site-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#hamburger-menu {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+nav li a.active,
+nav li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+.views-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.views-toggle button {
+  padding: 0.4rem 1.8rem;
+  font-size: 0.9rem;
+  border: 1px solid #777;
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+
+.views-toggle button.active-view {
+  background-color: #888888;
+  color: white;
+}
+
+/* Mobile Grid Layout */
+#members-container.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.member-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  background-color: #d0d0d0;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #000;
+}
+
+.card-header .tagline {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-box {
+  width: 90px;
+  height: 90px;
+  flex: 0 0 90px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden; /* Clips anything exceeding bounds */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.card-info p {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.card-info strong {
+  color: #000;
+}
+
+.card-info a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.card-info a:hover {
+  text-decoration: underline;
+}
+
+/* List View Overrides */
+#members-container.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#members-container.list-view .member-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1rem;
+  background-color: #f4f4f4;
+}
+
+#members-container.list-view .card-header {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+}
+
+#members-container.list-view .card-body {
+  padding: 0.5rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+#members-container.list-view .image-box {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-color);
+  color: #222;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.social-links a {
+  color: #444444;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #000000;
+}

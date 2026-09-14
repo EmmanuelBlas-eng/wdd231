@@ -1,0 +1,65 @@
+[
+  {
+    "name": "GV Florida Transport, Inc.",
+    "tagline": "Connecting Northern Luzon with safe and reliable land travel",
+    "address": "Barangay Matucay, Allacapan, Cagayan, Philippines",
+    "phone": "(078) 844-1234",
+    "website": "https://www.gvfloridatransport.com",
+    "image": "images/gv-florida.webp",
+    "membership": 3
+  },
+  {
+    "name": "Cagayan II Electric Cooperative",
+    "tagline": "Powering homes and progress across Cagayan",
+    "address": "Centro, Allacapan, Cagayan, Philippines",
+    "phone": "(078) 844-5678",
+    "website": "https://www.cagelco2.com.ph",
+    "image": "images/cagelco-2.webp",
+    "membership": 3
+  },
+  {
+    "name": "Allacapan Multipurpose Cooperative",
+    "tagline": "Empowering local farmers and micro-entrepreneurs",
+    "address": "Poblacion, Allacapan, Cagayan, Philippines",
+    "phone": "(078) 844-9012",
+    "website": "https://allacapanmpc.example.com",
+    "image": "images/amc-logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "St. Peter Life Plan, Inc.",
+    "tagline": "Your trusted partner in pre-need life plans",
+    "address": "National Highway, Centro, Allacapan, Cagayan, Philippines",
+    "phone": "(078) 844-3456",
+    "website": "https://www.stpeter.com.ph",
+    "image": "images/st-peter-logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "Damasco Palay Trading",
+    "tagline": "Quality grain buying and agricultural processing",
+    "address": "Barangay Silagan, Allacapan, Cagayan, Philippines",
+    "phone": "(0917) 555-7890",
+    "website": "https://damascopalay.example.com",
+    "image": "images/damascus-palay-trading-logo.webp",
+    "membership": 1
+  },
+  {
+    "name": "Neneng's Dry Goods",
+    "tagline": "Your one-stop shop for local merchandise and apparel",
+    "address": "Public Market, Allacapan, Cagayan, Philippines",
+    "phone": "(0918) 555-2345",
+    "website": "https://nenengsdrygoods.example.com",
+    "image": "images/neneng-dry-good.webp",
+    "membership": 1
+  },
+  {
+    "name": "LGU Allacapan BPLO",
+    "tagline": "Supporting municipal business growth and community development",
+    "address": "Municipal Hall, Centro, Allacapan, Cagayan, Philippines",
+    "phone": "(078) 844-1111",
+    "website": "https://allacapancagayan.gov.ph",
+    "image": "images/bplo-logo.webp",
+    "membership": 3
+  }
+]

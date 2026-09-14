@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Allacapan Chamber of Commerce</title>
+    <meta name="description" content="Browse local businesses supporting the Allacapan Chamber of Commerce.">
+    <meta name="author" content="Emmanuel Blas Roberto">
+
+    <link rel="icon" href="/chamber/images/acc-logo.png" type="image/x-icon">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Emmanuel Blas Roberto | Allacapan Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://EmmanuelBlas-eng.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https:/EmmanuelBlas-eng.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Connect with local business members in Allacapan.">
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="/chamber/styles/small.css">
+    <link rel="stylesheet" href="/chamber/styles/large.css">
+
+    <script src="/chamber/scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/chamber/images/acc-logo.png" alt="Chamber Logo" width="40" height="40">
+            <span class="site-name">Allacapan Chamber of Commerce</span>
+        </div>
+        
+        <button id="hamburger-menu" aria-label="Toggle Navigation Menu">&#9776;</button>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+
+        <div class="views-toggle">
+            <button id="grid-view" class="active-view">Grid</button>
+            <button id="list-view">List</button>
+        </div>
+
+        <div id="members-container" class="grid-view">
+            <!-- Dynamically Populated Cards -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="contact-info">
+                <p><strong>Allacapan Chamber of Commerce</strong></p>
+                <p>Zone 1 Lannag, Dagupan   </p> 
+                <p>Allacapan</p>
+                <p>info@AllacapanCOC.org</p>
+                <p>+63 927 3562 805</p>
+            </div>
+            
+            <div class="social-links">
+                    <a href="https://www.linkedin.com/in/emmanuel-blas-roberto-b369972b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+
+                    <a href="https://github.com/EmmanuelBlas-eng/wdd231" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+
+                    <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter fa-2xl"></i>
+                    </a>
+                </div>
+
+            <div class="dev-info">
+                <p>WDD231 Class Project</p>
+                <p>Emmanuel Blas Roberto</p>
+                <p>&copy; <span id="currentyear"></span> Allacapan Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
