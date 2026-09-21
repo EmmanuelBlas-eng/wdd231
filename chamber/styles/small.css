@@ -176,7 +176,7 @@ h1 {
   padding: 6px;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .image-box img {
@@ -365,17 +365,18 @@ footer {
 }
 
 /* Typography & Contrast Improvements */
-.hero-content h2 {
+.hero-content h1 {
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0 0 0.75rem 0;
   line-height: 1.25;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
 }
 
 .hero-content p {
-  color: #e0e6ed;
+  color: #ffffff;
   font-size: 1rem;
   margin: 0 0 1.5rem 0;
   max-width: 550px;

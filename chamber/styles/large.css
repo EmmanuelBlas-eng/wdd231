@@ -69,15 +69,15 @@
   }
 
   /* Desktop Layout for Home Page */
-  .hero-img {
+  .hero {
     height: 380px;
   }
 
-  .hero-cta h2 {
+  .hero-content h1 {
     font-size: 2.2rem;
   }
 
-  .hero-cta p {
+  .hero-content p {
     display: block;
     font-size: 1.05rem;
   }
