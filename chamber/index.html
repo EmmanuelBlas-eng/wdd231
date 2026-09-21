@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Allacapan Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Allacapan Chamber of Commerce. Discover local business events, news, weather updates, and member spotlights.">
+    <meta name="author" content="Emmanuel Blas Roberto">
+
+    <link rel="icon" href="../chamber/images/acc-logo.webp" type="image/x-icon">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Emmanuel Blas Roberto | Allacapan Chamber of Commerce Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://emmanuelblas-eng.github.io/wdd231/chamber/images/acc-logo.webp">
+    <meta property="og:url" content="https://emmanuelblas-eng.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Supporting business growth and community development in Allacapan, Cagayan.">
+
+    <!-- External Styles and Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../chamber/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/small.css">
+    <link rel="stylesheet" href="../chamber/styles/large.css">
+
+    <!-- JavaScript File -->
+    <script src="../chamber/scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../chamber/images/acc-logo.webp" alt="Chamber Logo" width="40" height="40">
+            <span class="site-name">Allacapan Chamber of Commerce</span>
+        </div>
+        
+        <button id="hamburger-menu" aria-label="Toggle Navigation Menu">&#9776;</button>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with CTA (Call-to-Action) Overlaid Link -->
+        <section class="hero">
+             <img src="./images/allacapan-municipal-hall.webp" alt="allacapan municipal hall" class="hero-bg-img" loading="eager">
+
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+               
+                <div class="hero-logo-box">
+                    <img src="../chamber/images/acc-logo.webp" alt="Allacapan Town Center Hero View" class="hero-logo" loading="eager">
+                </div>
+            
+                <h2>Empowering Local Enterprise in Allacapan</h2>
+                <p>Build valuable networks, access business resources, and grow your enterprise with us.</p>
+                <a href="join.html" class="cta-button">Join the Chamber Today</a>
+            </div>
+        </section>
+
+        <!-- Home Page Grid Sections -->
+        <div class="home-grid">
+            <!-- Current Events Section -->
+            <section class="card events-card">
+                <h2>Current Events</h2>
+                <ul class="events-list">
+                    <li>
+                        <strong>Q3 Business Leadership Summit</strong>
+                        <p>October 15 | Allacapan Town Hall Annex</p>
+                    </li>
+                    <li>
+                        <strong>Agri-Business & Trade Fair 2026</strong>
+                        <p>November 3-5 | Public Market Grounds</p>
+                    </li>
+                    <li>
+                        <strong>Digital Transformation Workshop</strong>
+                        <p>December 1 | Online Webinar</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="card weather-card">
+                <h2>Local Weather</h2>
+                <div id="weather-current" class="weather-current">
+                    <p>Loading weather data...</p>
+                </div>
+                <h3>3-Day Forecast</h3>
+                <div id="weather-forecast" class="weather-forecast">
+                    <!-- Dynamic 3-Day Forecast populated by JS -->
+                </div>
+            </section>
+
+            <!-- Member Spotlights Section -->
+            <section class="card spotlights-card">
+                <h2>Member Spotlights</h2>
+                <div id="spotlights-container" class="spotlights-container">
+                    <!-- Dynamic Spotlights loaded via Fetch/Async JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="contact-info">
+                <p><strong>Allacapan Chamber of Commerce</strong></p>
+                <p>Zone 1 Lannag, Dagupan</p> 
+                <p>Allacapan</p>
+                <p>info@AllacapanCOC.org</p>
+                <p>+63 927 3562 805</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/emmanuel-blas-roberto-b369972b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+
+                <a href="https://github.com/EmmanuelBlas-eng/wdd231" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+
+                <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                    <i class="fa-brands fa-x-twitter fa-2xl"></i>
+                </a>
+            </div>
+
+            <div class="dev-info">
+                <p>WDD231 Class Project</p>
+                <p>Emmanuel Blas Roberto</p>
+                <p>&copy; <span id="currentyear"></span> Allacapan Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -67,4 +67,34 @@
   .dev-info {
     text-align: right;
   }
+
+  /* Desktop Layout for Home Page */
+  .hero-img {
+    height: 380px;
+  }
+
+  .hero-cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-cta p {
+    display: block;
+    font-size: 1.05rem;
+  }
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .spotlights-card {
+    grid-column: span 2;
+  }
+
+  .spotlights-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }

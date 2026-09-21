@@ -5,11 +5,11 @@
     "address": "Barangay Matucay, Allacapan, Cagayan, Philippines",
     "phone": "(078) 844-1234",
     "website": "https://www.gvfloridatransport.com",
-    "image": "../chamber/images/gv-florida.webp",
+    "image": "../chamber/images/florida-logo.webp",
     "membership": 3
   },
   {
-    "name": "Cagayan II Electric Cooperative",
+    "name": "Cagayan II Electric Coop.,",
     "tagline": "Powering homes and progress across Cagayan",
     "address": "Centro, Allacapan, Cagayan, Philippines",
     "phone": "(078) 844-5678",
@@ -18,7 +18,7 @@
     "membership": 3
   },
   {
-    "name": "Allacapan Multipurpose Cooperative",
+    "name": "Allacapan Multipurp. Coop.,",
     "tagline": "Empowering local farmers and micro-entrepreneurs",
     "address": "Poblacion, Allacapan, Cagayan, Philippines",
     "phone": "(078) 844-9012",
