@@ -564,16 +564,6 @@ footer {
   font-weight: bold;
 }
 
-.badge-3 {
-  background-color: #ffd700;
-  color: #000;
-}
-
-.badge-2 {
-  background-color: #c0c0c0;
-  color: #000;
-}
-
 .spotlight-body {
   display: flex;
   gap: 0.8rem;
@@ -720,7 +710,6 @@ footer {
 }
 
 .membership-cards h2 {
-  font-size: 1.4rem;
   margin-top: 2rem;
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
