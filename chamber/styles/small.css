@@ -280,7 +280,7 @@ h1 {
 }
 
 #members-container.list-view .image-box {
-  display: relative;
+  position: relative;
   width: 60px;
   height: 60px;
   flex: 0 0 60px;
