@@ -51,70 +51,70 @@
     </header>
 
     <main>   
-         <h1>Membership Application</h1>
-         <p class="join-intro">Complete the form below to initiate your membership with the Chamber.</p>
+        <h1>Membership Application</h1>
+        <p class="join-intro">Complete the form below to initiate your membership with the Chamber.</p>
    
         <!-- Home Page Grid Sections -->
-        <div class="join-contanier">
+        <div class="join-container">
             <!-- Current Events Section -->
            <form method="get" action="thankyou.html" class="join-form">
-    <fieldset>
-        <legend>Applicant Information</legend>
+                <fieldset>
+                    <legend>Applicant Information</legend>
 
-        <div class="form-row">
-            <label for="fname">First Name*
-                <input type="text" id="fname" name="fname" required autocomplete="given-name" title="Enter your first name">
-            </label>
+                    <div class="form-row">
+                        <label for="fname">First Name*
+                            <input type="text" id="fname" name="fname" required autocomplete="given-name" title="Enter your first name">
+                        </label>
 
-            <label for="lname">Last Name*
-                <input type="text" id="lname" name="lname" required autocomplete="family-name" title="Enter your last name">
-            </label>
-        </div>
+                        <label for="lname">Last Name*
+                            <input type="text" id="lname" name="lname" required autocomplete="family-name" title="Enter your last name">
+                        </label>
+                    </div>
 
-        <div class="form-row">
-            <label for="title">Organizational Title
-                <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Alpha characters, hyphens, and spaces only (minimum 7 characters)">
-            </label>
+                    <div class="form-row">
+                        <label for="title">Organizational Title
+                            <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Alpha characters, hyphens, and spaces only (minimum 7 characters)">
+                        </label>
 
-            <label for="email">Email Address*
-                <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Enter a valid email address">
-            </label>
-        </div>
+                        <label for="email">Email Address*
+                            <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Enter a valid email address">
+                        </label>
+                    </div>
 
-        <div class="form-row">
-            <label for="phone">Mobile Phone Number*
-                <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
-            </label>
+                    <div class="form-row">
+                        <label for="phone">Mobile Phone Number*
+                            <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
+                        </label>
 
-            <label for="organization">Business / Organization Name*
-                <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your business or organization name">
-            </label>
-        </div>
-    </fieldset>
+                        <label for="organization">Business / Organization Name*
+                            <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your business or organization name">
+                        </label>
+                    </div>
+                </fieldset>
 
-    <fieldset>
-        <legend>Organization Details</legend>
+                <fieldset>
+                    <legend>Organization Details</legend>
 
-        <label for="membership">Membership Level*
-            <select id="membership" name="membership" required title="Select a membership level">
-                <option value="" disabled selected>Select a Level...</option>
-                <option value="np">NP Membership (Non-Profit / Free)</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-            </select>
-        </label>
+                    <label for="membership">Membership Level*
+                        <select id="membership" name="membership" required autocomplete="off" title="Select a membership level">
+                            <option value="" disabled selected>Select a Level...</option>
+                            <option value="np">NP Membership (Non-Profit / Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
 
-        <label for="description">Business / Organization Description
-            <textarea id="description" name="description" rows="4" title="Briefly describe your business or organization"></textarea>
-        </label>
-    </fieldset>
+                    <label for="description">Business / Organization Description
+                        <textarea id="description" name="description" rows="4" autocomplete="off" title="Briefly describe your business or organization"></textarea>
+                    </label>
+                </fieldset>
 
-    <!-- Hidden Timestamp Field -->
-    <input type="hidden" id="timestamp" name="timestamp">
+                <!-- Hidden Timestamp Field -->
+                <input type="hidden" id="timestamp" name="timestamp" autocomplete="off">
 
-    <input type="submit" value="Submit Application" class="submit-btn">
-</form>
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </form>
 
             <section class="membership-cards" aria-label="Membership Tiers">
                 <h2>Membership Tiers</h2>
@@ -132,7 +132,7 @@
                     <p class="cost">&#8369 2,500.00 / year </p>
                     <p>Essential benefits for local small business and startups.</p>
                     <img src="images/bronze-tier.webp" alt="Free Tier Logo" class="photo-card">
-                    <button type="button" class="modal-open-btn" data-modal="modal-np">View Bronze Benefits</button>
+                    <button type="button" class="modal-open-btn" data-modal="modal-bronze">View Bronze Benefits</button>
                 </div>
 
                 <div class="card tier-card silver-card">
@@ -140,7 +140,7 @@
                     <p class="cost">&#8369 5,000.00 / year</p>
                     <p>Enhanced exposure and access to promotional events</p>
                     <img src="images/silver-tier.webp" alt="Free Tier Logo" class="photo-card">
-                    <button type="button" class="modal-open-btn" data-modal="modal-np">View Silver Benefits</button>
+                    <button type="button" class="modal-open-btn" data-modal="modal-silver">View Silver Benefits</button>
                 </div>
 
                 <div class="card tier-card gold-card">
@@ -148,67 +148,67 @@
                     <p class="cost">&#8369 10,000.00 / year</p>
                     <p>Maximum visibility, home page spotlights, and premium event discounts</p>
                     <img src="images/gold-tier.webp" alt="Free Tier Logo" class="photo-card">
-                    <button type="button" class="modal-open-btn" data-modal="modal-np">View Gold Benefits</button>
+                    <button type="button" class="modal-open-btn" data-modal="modal-gold">View Gold Benefits</button>
                 </div>
 
             </section>
+       
+
+            <dialog id="modal-np">
+                <div class="modal-content">
+                    <h3>NP Membership Benefits</h3>
+                    <ul>
+                        <li>Free Membership fpr registered non-profit entities</li>
+                        <li>Listing on the Chamber Directory</li>
+                        <li>Access to general networking meetings</li>
+                        <li>Community bulletin postings</li>
+                    </ul>
+                    <button type="button" class="modal-close-btn">Close</button>
+                </div>
+            </dialog>
+
+            <dialog id="modal-bronze">
+                <div class="modal-content">
+                    <h3>Bronze Membership Benefits</h3>
+                    <ul>
+                        <li>Includes all NP tiers benefits</li>
+                        <li>Directory listing with business logo and link</li>
+                        <li>Invitation to monthly business training workshops</li>
+                        <li>10% discount on Chamber event tickets</li>
+                    </ul>
+                    <button type="button" class="modal-close-btn">Close</button>
+                </div>
+            </dialog>
+
+
+            <dialog id="modal-silver">
+                <div class="modal-content">
+                    <h3>Silver Membership Benefits</h3>
+                    <ul>
+                        <li>Includes all Bronze tier benefits</li>
+                        <li>Randomized Silver Member Spotlight rotation on homepage</li>
+                        <li>20% discount on Chamber event tickets and trade fairs</li>
+                        <li>1 free sponsored social media post per year</li>
+                    </ul>
+                    <button type="button" class="modal-close-btn">Close</button>
+                </div>
+            </dialog>
+
+
+            <dialog id="modal-gold">
+                <div class="modal-content">
+                    <h3>Gold Membership Benefits</h3>
+                    <ul>
+                        <li>Includes all Silver tier benefits</li>
+                        <li>Priority Gold Member Spotlight placement on homepage</li>
+                        <li>30% discount on all chamber events and trades booths</li>
+                        <li>Banner placement on chamber quarterly newsletter</li>
+                        <li>Free booth at the annual Agri-Business & Trade Fair</li>
+                    </ul>
+                    <button type="button" class="modal-close-btn">Close</button>
+                </div>
+            </dialog>
         </div>
-
-        <dialog id="modal-np">
-            <div class="modal-content">
-                <h3>NP Membership Benefits</h3>
-                <ul>
-                    <li>Free Membership fpr registered non-profit entities</li>
-                    <li>Listing on the Chamber Directory</li>
-                    <li>Access to general networking meetings</li>
-                    <li>Community bulletin postings</li>
-                </ul>
-                <button type="button" class="modal-close-btn">Close</button>
-            </div>
-        </dialog>
-
-        <dialog id="modal-bronze">
-            <div class="modal-content">
-                <h3>Bronze Membership Benefits</h3>
-                <ul>
-                    <li>Includes all NP tiers benefits</li>
-                    <li>Directory listing with business logo and link</li>
-                    <li>Invitation to monthly business training workshops</li>
-                    <li>10% discount on Chamber event tickets</li>
-                </ul>
-                <button type="button" class="modal-close-btn">Close</button>
-            </div>
-        </dialog>
-
-
-        <dialog id="modal-silver">
-            <div class="modal-content">
-                <h3>Silver Membership Benefits</h3>
-                <ul>
-                    <li>Includes all Bronze tier benefits</li>
-                    <li>Randomized Silver Member Spotlight rotation on homepage</li>
-                    <li>20% discount on Chamber event tickets and trade fairs</li>
-                    <li>1 free sponsored social media post per year</li>
-                </ul>
-                <button type="button" class="modal-close-btn">Close</button>
-            </div>
-        </dialog>
-
-
-        <dialog id="modal-Gold">
-            <div class="modal-content">
-                <h3>Gold Membership Benefits</h3>
-                <ul>
-                    <li>Includes all Silver tier benefits</li>
-                    <li>Priority Gold Member Spotlight placement on homepage</li>
-                    <li>30% discount on all chamber events and trades booths</li>
-                    <li>Banner placement on chamber quarterly newsletter</li>
-                    <li>Free booth at the annual Agri-Business & Trade Fair</li>
-                </ul>
-                <button type="button" class="modal-close-btn">Close</button>
-            </div>
-        </dialog>
-
            
     </main>
 

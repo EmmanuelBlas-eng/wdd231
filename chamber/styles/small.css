@@ -729,11 +729,22 @@ footer {
 }
 
 .tier-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(4.5rem, 5.5rem);
+  column-gap: 1rem;
   position: relative;
   border: 1px solid var(--border-color, #ccc);
   border-radius: 8px;
-  overflow: hidden; 
-  padding-left: 1.5rem; 
+  overflow: hidden;
+  padding-left: 1.5rem;
+  animation: cardFadeIn 0.6s ease-out both;
+}
+
+.tier-card h3,
+.tier-card .cost,
+.tier-card p,
+.tier-card .modal-open-btn {
+  grid-column: 1;
 }
 
 /* Stagger animation timing */
@@ -757,7 +768,7 @@ footer {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 6px; 
+  width: 6px;
 }
 
 .tier-card h3 {
@@ -787,12 +798,11 @@ footer {
   background-color: #d4af37;
 }
 
-
 .tier-card img.photo-card {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  width: 150px;
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  align-self: center;
+  width: 100%;
   height: auto;
   margin: 0;
   display: block;
@@ -810,7 +820,8 @@ footer {
   cursor: pointer;
   margin-top: 0.5rem;
   transition: opacity 0.2s ease;
-  min-width: 180px;
+  width: 100%;
+  min-width: 0;
 }
 
 .modal-open-btn:hover {
