@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p class="tagline"><em>"${member.tagline}"</em></p>
                         <p><strong>Phone:</strong> ${member.phone}</p>
                         <p><strong>Address:</strong> ${member.address}</p>
-                        <p><strong>URL:</strong> <a href="${member.website}" target="_blank" rel="noopener">${domain}</a></p>
+                        <p><strong>Website:</strong> <a href="${member.website}" target="_blank" rel="noopener">${domain}</a></p>
                     </div>
                 </div>
             `;

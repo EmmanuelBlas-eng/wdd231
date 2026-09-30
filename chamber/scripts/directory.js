@@ -42,30 +42,36 @@ document.addEventListener("DOMContentLoaded", () => {
             card.classList.add("member-card");
 
            
-    const domain = member.website.replace("https://", "").replace("http://", "").replace("www.", "").split('/')[0];
-    
-    
-    const email = `info@${domain}`;
+    const membershipLabels = {
+  3: "Gold Member",
+  2: "Silver Member",
+  1: "Bronze Member",
+  0: "NP Member"
+};
 
-    card.innerHTML = `
+const levelLabel = membershipLabels[member.membership] || "Member";
+
+            const domain = member.website.replace("https://", "").replace("http://", "").replace("www.", "").split('/')[0];
+
+            card.innerHTML = `
   <div class="card-header">
     <h2>${member.name}</h2>
-    <p class="tagline">${member.tagline}</p>
+    <span class="membership-badge badge-${member.membership}">${levelLabel}</span>
   </div>
   <div class="card-body">
     <div class="image-box">
       <img src="${member.image}" alt="${member.name} Logo" loading="lazy">
     </div>
     <div class="card-info">
-      <p><strong>EMAIL:</strong> ${email}</p>
-      <p><strong>PHONE:</strong> ${member.phone}</p>
-      <p><strong>URL:</strong> <a href="${member.website}" target="_blank" rel="noopener">${domain}</a></p>
+      ${member.tagline ? `<p class="tagline"><em>"${member.tagline}"</em></p>` : ''}
+      <p><strong>Phone:</strong> <a href="tel:${member.phone}">${member.phone}</a></p>
+      <p><strong>Address:</strong> ${member.address}</p>
+      <p><strong>Website:</strong> <a href="${member.website}" target="_blank" rel="noopener">${domain}</a></p>
     </div>
   </div>
 `;
-
-    container.appendChild(card);
-  });
+            container.appendChild(card);
+        });
 }
 
    

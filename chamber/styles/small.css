@@ -35,7 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 5px solid var(--secondary-color);
   position: relative;
 }
 
@@ -68,8 +68,7 @@ nav {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--bg-color);
-  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+  background-color: var(--primary-color);
   z-index: 100;
 }
 
@@ -86,8 +85,10 @@ nav ul {
 nav li a {
   display: block;
   padding: 0.8rem 1.5rem;
-  color: #333333;
+  color: var(--white);
   text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
 }
 
 nav li a.active,
@@ -109,6 +110,8 @@ h1 {
   text-align: center;
 }
 
+/* Directory Page */
+
 .views-toggle {
   display: flex;
   justify-content: center;
@@ -118,15 +121,17 @@ h1 {
 
 .views-toggle button {
   padding: 0.4rem 1.8rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   border: 1px solid #777;
   background-color: #c4c4c4;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .views-toggle button.active-view {
   background-color: #1f3a52;
   color: var(--white);
+  font-weight: bold;
 }
 
 /* Mobile Grid Layout */
@@ -220,6 +225,30 @@ h1 {
   text-decoration: underline;
 }
 
+/* Gold (3) */
+.badge-3 {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* Silver (2) */
+.badge-2 {
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+/* Bronze (1) */
+.badge-1 {
+  background-color: #cd7f32;
+  color: #fff;
+}
+
+/* Non-Profit / NP (0) */
+.badge-0 {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
 /* List View Overrides */
 #members-container.list-view {
   display: flex;
@@ -239,6 +268,7 @@ h1 {
   border: none;
   padding: 0;
   text-align: left;
+  border-bottom: 5px;
 }
 
 #members-container.list-view .card-body {
@@ -250,7 +280,7 @@ h1 {
 }
 
 #members-container.list-view .image-box {
-  display: flex;
+  display: relative;
   width: 60px;
   height: 60px;
   flex: 0 0 60px;
@@ -461,7 +491,7 @@ footer {
 .events-list p {
   margin: 0.2rem 0 0 0;
   font-size: 0.85rem;
-   color: #555555;
+  color: #555555;
 }
 
 /* Weather Section */
@@ -488,7 +518,7 @@ footer {
 }
 
 .forecast-day {
- background-color: var(--white);
+  background-color: var(--white);
   padding: 0.5rem;
   border-radius: 4px;
   border: 1px solid var(--border-color);
@@ -554,4 +584,324 @@ footer {
   width: 70px;
   height: 70px;
   flex: 0 0 70px;
+}
+
+/* ==========================================================================
+   JOIN FORM & THANK YOU PAGE STYLES (Mobile First)
+   ========================================================================== */
+
+.join-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--muted-text);
+}
+
+.join-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Container and Fieldsets */
+.join-form {
+  background-color: var(--light-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-small);
+}
+
+.join-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--white);
+}
+
+.join-form legend {
+  font-weight: bold;
+  color: var(--primary-color);
+  padding: 0 0.5rem;
+}
+
+/* Force Form Row Stacking on Mobile */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Force Label Text to Stack Directly ABOVE Input Fields */
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  gap: 0.35rem;
+  width: 100%;
+}
+
+/* Expand Inputs, Selects, and Textarea to Full Width */
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.join-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Highlight Required Fields */
+.join-form input:required,
+.join-form select:required {
+  border-left: 4px solid var(--secondary-color);
+}
+
+/* Focus Indicator for Usability */
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(31, 58, 82, 0.15);
+  background-color: var(--white);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #b33600;
+}
+
+/* Membership Cards Load Animation */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.membership-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.membership-cards h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.4rem;
+  font-size: 30px;
+}
+
+.tier-card {
+  position: relative;
+  border: 1px solid var(--border-color, #ccc);
+  border-radius: 8px;
+  overflow: hidden; 
+  padding-left: 1.5rem; 
+}
+
+/* Stagger animation timing */
+.tier-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.tier-card:nth-child(3) {
+  animation-delay: 0.25s;
+}
+.tier-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.tier-card:nth-child(5) {
+  animation-delay: 0.55s;
+}
+
+/* Left Accent Bar Pseudo-Element */
+.tier-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px; 
+}
+
+.tier-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.tier-card .cost {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin: 0.2rem 0 0.6rem;
+}
+
+/* Accent colors applied to the pseudo-element */
+.np-card::before {
+  background-color: #6c757d;
+}
+.bronze-card::before {
+  background-color: #cd7f32;
+}
+.silver-card::before {
+  background-color: #a0a0a0;
+}
+.gold-card::before {
+  background-color: #d4af37;
+}
+
+
+.tier-card img.photo-card {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 150px;
+  height: auto;
+  margin: 0;
+  display: block;
+  mix-blend-mode: multiply;
+  background-color: transparent !important;
+}
+
+.modal-open-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s ease;
+  min-width: 180px;
+}
+
+.modal-open-btn:hover {
+  opacity: 0.9;
+}
+
+/* HTML Modal (dialog) */
+dialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: var(--shadow-large);
+  padding: 0;
+  max-width: 500px;
+  width: 90%;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  padding: 1.5rem;
+  background-color: var(--white);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.modal-content ul {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.modal-close-btn {
+  background-color: #555555;
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 0.5rem;
+}
+
+/* Thank You Page Styling */
+.thankyou-card {
+  background-color: var(--light-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-small);
+}
+
+.results-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  background-color: var(--white);
+  padding: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.results-row {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.results-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.results-label {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.results-value {
+  color: var(--text-color);
+  font-size: 1rem;
 }

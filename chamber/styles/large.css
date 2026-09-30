@@ -97,4 +97,23 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
+
+
+  .join-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .results-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
 }
