@@ -1,0 +1,276 @@
+/* ==========================================================================
+   SITE PLAN CSS - EXPLORE CAGAYAN VALLEY
+   Uses the defined palette & typography exclusively on this document
+   ========================================================================== */
+
+/* 1. COLOR SCHEME VARIABLES */
+:root {
+  --primary-blue: #1a365d; /* Ocean Deep Blue */
+  --accent-green: #2f855a; /* Emerald Forest Green */
+  --bg-light: #f7fafc; /* Off-White Background */
+  --text-dark: #2d3748; /* Charcoal Dark Gray */
+  --white: #ffffff;
+  --border-gray: #e2e8f0;
+}
+
+/* 2. TYPOGRAPHY RULES */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-blue);
+  margin-top: 0;
+}
+
+/* 3. HEADER & FOOTER */
+header {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+header .subtitle {
+  font-size: 1.1rem;
+  color: var(--border-gray);
+  margin: 0;
+}
+
+footer {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* 4. LAYOUT & CONTAINERS */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-top: 4px solid var(--accent-green);
+  border-radius: 6px;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  border-bottom: 2px solid var(--border-gray);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+code {
+  background-color: var(--bg-light);
+  color: var(--accent-green);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* 5. SCENARIO STYLING */
+.scenario-box {
+  background-color: var(--bg-light);
+  border-left: 4px solid var(--primary-blue);
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+/* 6. COLOR SWATCHES DISPLAY */
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.color-swatch {
+  flex: 1 1 180px;
+  padding: 1.5rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.color-swatch span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.color-swatch p {
+  margin: 0.3rem 0 0 0;
+  font-size: 0.85rem;
+}
+
+.swatch-primary {
+  background-color: var(--primary-blue);
+}
+.swatch-accent {
+  background-color: var(--accent-green);
+}
+.swatch-bg {
+  background-color: #cbd5e0;
+  color: var(--text-dark);
+}
+.swatch-text {
+  background-color: var(--text-dark);
+}
+
+/* 7. TYPOGRAPHY DEMO */
+.font-demo {
+  border: 1px solid var(--border-gray);
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.font-heading .font-sample {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.font-body .font-sample {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+/* 8. WIREFRAME LAYOUT STYLES */
+.wireframe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.wireframe-box {
+  flex: 1 1 300px;
+}
+
+.sketch-wireframe {
+  border: 2px dashed var(--primary-blue);
+  background-color: var(--bg-light);
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.wf-header {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wf-nav {
+  font-size: 0.75rem;
+}
+
+.wf-hero {
+  background-color: #cbd5e0;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 3px;
+}
+
+.wf-search {
+  background-color: var(--white);
+  border: 1px solid #a0aec0;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+.wf-section {
+  border: 1px solid #a0aec0;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--white);
+  border-radius: 3px;
+}
+
+.wf-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.wf-grid-2 div,
+.wf-flex-row div,
+.wf-card {
+  background-color: #e2e8f0;
+  padding: 0.4rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.wf-flex-row {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: space-around;
+  margin-top: 0.3rem;
+}
+
+.wf-flex-row div {
+  flex: 1;
+}
+
+.wf-footer {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  border-radius: 3px;
+}
