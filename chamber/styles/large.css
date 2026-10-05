@@ -118,17 +118,6 @@
 
 
 
-  /* Medium Screen Layout (641px - 1024px) */
-@media screen and (min-width: 641px) and (max-width: 1024px) {
-  .discover-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8";
-  }
-}
 
 /* Large Screen Layout (1025px and above) + Hover Effect */
 @media screen and (min-width: 1025px) {
@@ -138,6 +127,7 @@
       "card1 card2 card3 card4"
       "card5 card6 card7 card8";
   }
+}
 
   /* Image Hover Effect applied ONLY on Desktop */
   .discover-card figure img {
@@ -150,4 +140,4 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   }
 }
-}
+

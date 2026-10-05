@@ -929,9 +929,16 @@ dialog::backdrop {
 .discover-grid {
   display: grid;
   gap: 1.5rem;
-  min-height: 800px; /* Reserves layout space before JS finishes loading */
-  content-visibility: auto;
-  contain-intrinsic-size: 1000px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
 }
 
 .card-1 {
