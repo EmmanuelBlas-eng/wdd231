@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat &amp; Stay Directory - Explore Cagayan Valley</title>
+
+    <meta name="description" content="Find locally recommended restaurants, cafes, hotels, resorts, and homestays throughout Cagayan Valley's five provinces.">
+    <meta name="author" content="Emmanuel Blas Patanindagat Roberto">
+
+    <meta property="og:title" content="Stay &amp; Eat Directory | Explore Cagayan Valley">
+    <meta property="og:description" content="Browse dining and accommodation options across Batanes, Cagayan, Isabela, Nueva Vizcaya, and Quirino.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emmanuelblas-eng.github.io/wdd231/finalproject/directory.html">
+    <meta property="og:image" content="https://emmanuelblas-eng.github.io/wdd231/finalproject/images/honesty-coffee-shop.webp">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌄</text></svg>">
+
+    <!-- Preload the LCP hero background image for faster Largest Contentful Paint -->
+    <link rel="preload" as="image" fetchpriority="high" href="./images/sabtang-island-batanes.webp">
+
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+
+    <script type="module" src="./scripts/directory.js"></script>
+    <script type="module" src="./scripts/footer.js"></script>
+
+
+    </head>
+<body>
+
+    <!-- SITE HEADER -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-box">
+                <span class="logo-icon">🌄</span>
+                <div class="logo-text">
+                    <span class="site-title">Explore Cagayan Valley</span>
+                    <span class="site-tagline">Region 2 Tourism Portal</span>
+                </div>
+            </a>
+
+            <button id="hamburger-menu" class="hamburger-btn" type="button" aria-label="Toggle Navigation Menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+
+            <nav id="primary-nav" class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="provinces.html" class="nav-link">Provinces &amp; Attractions</a></li>
+                    <li><a href="directory.html" class="nav-link active" aria-current="page">Stay &amp; Eat Directory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HERO HEADER -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Stay &amp; Eat Directory</h1>
+            <p>Discover authentic local dining, regional delicacies, and comfortable accommodations across Region 2.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- UPPER SECTION: WHERE TO EAT DIRECTORY -->
+        <section id="eat-directory" class="section-container">
+            <div class="section-header">
+                <h2>🍽️ Where to Eat</h2>
+                <p>Taste the finest Batil Patung, fresh seafood, and authentic Ilokano cuisine.</p>
+            </div>
+
+            <!-- EAT SEARCH BAR -->
+            <div class="search-bar-container">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="eat-search-input" placeholder="Search restaurants, cafes, dishes, or cities..." aria-label="Search dining options">
+                </div>
+                <button type="button" class="btn-search" id="eat-search-btn">Search</button>
+            </div>
+
+            <!-- EAT CATEGORY FILTERS -->
+            <div class="eat-filter-bar filter-spacing">
+                <button type="button" class="eat-btn active" data-eat-filter="all">All Dining</button>
+                <button type="button" class="eat-btn" data-eat-filter="panciteria">Panciterias</button>
+                <button type="button" class="eat-btn" data-eat-filter="seafood">Seafood &amp; Native</button>
+                <button type="button" class="eat-btn" data-eat-filter="cafe">Cafes &amp; Desserts</button>
+            </div>
+
+            <!-- EAT GRID CARDS -->
+            <div class="eat-grid" id="eat-grid"></div>
+
+        </section>
+
+        <!-- LOWER SECTION: WHERE TO STAY DIRECTORY -->
+        <section id="stay-directory" class="section-container bg-alt">
+            <div class="section-header">
+                <h2>🏨 Where to Stay</h2>
+                <p>Find comfortable hotels, beachfront resorts, and authentic local homestays.</p>
+            </div>
+
+            <!-- STAY SEARCH BAR -->
+            <div class="search-bar-container">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="stay-search-input" placeholder="Search hotels, resorts, homestays, or locations..." aria-label="Search accommodations">
+                </div>
+                <button type="button" class="btn-search" id="stay-search-btn">Search Stay</button>
+            </div>
+
+            <!-- STAY CATEGORY FILTERS -->
+            <div class="dining-filter-bar filter-spacing">
+                <button type="button" class="dining-btn active" data-stay-filter="all">All Stay</button>
+                <button type="button" class="dining-btn" data-stay-filter="hotel">Hotels</button>
+                <button type="button" class="dining-btn" data-stay-filter="resort">Beach Resorts</button>
+                <button type="button" class="dining-btn" data-stay-filter="homestay">Homestays</button>
+            </div>
+
+            <!-- STAY GRID CARDS -->
+            <div class="stay-grid" id="stay-grid"></div>
+
+        </section>
+    </main>
+
+    <!-- Consolidated Details Modal -->
+    <dialog id="directory-modal" class="custom-modal" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+            <h3 id="modal-title">Item Title</h3>
+            <p class="modal-loc-text" id="modal-location">📍 Location</p>
+            <div id="modal-body" class="modal-body-text">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Image Lightbox Modal -->
+    <dialog id="image-lightbox" class="lightbox-modal" aria-labelledby="lightbox-caption">
+        <button id="lightbox-close-btn" class="lightbox-close" type="button">&times;</button>
+        <img id="lightbox-img" src="./images/sabtang-island-batanes.webp" alt="" aria-describedby="lightbox-caption" width="640" height="420">
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+    </dialog>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container" id="dynamic-footer-grid"></div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="footer-year">2026</span> Explore Cagayan Valley <span class="divider">|</span> Author: Emmanuel Blas Patanindagat Roberto <span class="divider">|</span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+</body>
+</html>

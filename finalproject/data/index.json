@@ -1,0 +1,572 @@
+{
+  "region": {
+    "name": "Cagayan Valley (Region II)",
+    "country": "Philippines",
+    "official_tourism_portal": "https://region2.tourism.gov.ph",
+    "regional_contact": {
+      "phone": "+63 (78) 304-1505",
+      "email": "dot2@tourism.gov.ph",
+      "facebook": "https://www.facebook.com/DOTRegion2"
+    },
+    "provinces": [
+      {
+        "province_name": "Batanes",
+        "capital": "Basco",
+        "official_website": "http://www.batanes.gov.ph",
+        "provincial_tourism_office": {
+          "phone": "+63 998 531 3856",
+          "email": "batanestourism@yahoo.com",
+          "facebook": "https://www.facebook.com/BatanesTourismOffice"
+        },
+        "main_attractions": [
+          {
+            "name": "Marlboro Hills (Rac-a-Payaman)",
+            "category": "Ecotourism / Eco-Park",
+            "location": "Mahatao, Batanes",
+            "contact_phone": "+63 998 531 3856",
+            "email": "batanestourism@yahoo.com",
+            "website": "http://www.batanes.gov.ph",
+            "description": "Rolling hills offering panoramic views of the Pacific Ocean and South China Sea with grazing livestock.",
+            "image": "marlboro-hills.webp"
+          },
+          {
+            "name": "Sabtang Island & Chavayan Stone Houses",
+            "category": "Heritage / Cultural Site",
+            "location": "Sabtang, Batanes",
+            "contact_phone": "+63 998 584 5773",
+            "email": "sabtangtourism@gmail.com",
+            "website": "http://www.batanes.gov.ph",
+            "description": "Traditional Ivatan stone houses built to withstand strong typhoons.",
+            "image":"chavayan-stone-houses.webp"
+          },
+          {
+            "name": "Basco Lighthouse (Naidi Hills)",
+            "category": "Landmark / Historical Site",
+            "location": "Basco, Batanes",
+            "contact_phone": "+63 998 531 3856",
+            "email": "bascotourism@gmail.com",
+            "website": "http://www.batanes.gov.ph",
+            "description": "Iconic lighthouse offering 360-degree views of Mt. Iraya and the West Philippine Sea.",
+            "image": "basco-lighthouse.webp"
+          }
+        ],
+        "popular_stays": [
+          {
+            "name": "Fundacion Pacita Batanes Nature Lodge",
+            "type": "Boutique Resort",
+            "location": "Basco, Batanes",
+            "phone": "+63 998 568 2818",
+            "email": "info@fundacionpacita.ph",
+            "website": "https://www.fundacionpacita.ph",
+            "facebook": "https://www.facebook.com/FundacionPacita",
+            "image": "fundacion-pacita-batanes-nature-lodge.webp"
+          },
+          {
+            "name": "Residencia du Basco",
+            "type": "Hotel / Resort",
+            "location": "Basco, Batanes",
+            "phone": "+63 998 544 3362",
+            "email": "residenciadubasco@yahoo.com",
+            "website": "https://www.residenciadubasco.com",
+            "facebook": "https://www.facebook.com/residenciadubascobatanes",
+            "image": "residencia-du-basco.webp"
+          },
+          {
+            "name": "Boulder-Bay Residences",
+            "type": "Boutique Inn",
+            "location": "Basco, Batanes",
+            "phone": "+63 920 968 1845",
+            "email": "boulderbayresidences@gmail.com",
+            "website": "https://www.boulderbayresidences.com",
+            "facebook": "https://www.facebook.com/BoulderBayResidences",
+            "image": "boulder-bay-residences.webp"
+          }
+        ],
+        "popular_eat_and_dine": [
+          {
+            "name": "Honesty Coffee Shop",
+            "type": "Self-Service Cafe",
+            "location": "Ivana, Batanes",
+            "phone": "+63 998 531 3856",
+            "email": "honestycoffeeshop@gmail.com",
+            "website": "http://www.batanes.gov.ph",
+            "facebook": "https://www.facebook.com/HonestyCoffeeShopOfficial",
+            "specialty": "Coffee, local snacks, and Ivatan pastries",
+            "image": "honesty-coffee-shop.webp"
+          },
+          {
+            "name": "Octagon Bed and Dine",
+            "type": "Restaurant",
+            "location": "Basco, Batanes",
+            "phone": "+63 917 585 2200",
+            "email": "octagonbedanddine@gmail.com",
+            "website": "https://www.octagonbedanddine.com",
+            "facebook": "https://www.facebook.com/octagonbedanddine",
+            "specialty": "Luñis (Ivatan salted fried pork), Flying Fish, and Vunes",
+            "image": "octagon-bed-and-dine.webp"
+          },
+          {
+            "name": "Pension Ivatan Hometel and Restaurant",
+            "type": "Traditional Restaurant",
+            "location": "Basco, Batanes",
+            "phone": "+63 917 521 0093",
+            "email": "pensionivatan@yahoo.com.ph",
+            "website": "http://www.pensionivatan.com",
+            "facebook": "https://www.facebook.com/PensionIvatanHometelRestaurant",
+            "specialty": "Ivatan Platter served on breadfruit leaves",
+            "image": "pension-ivatan-hometel-and-restaurant.webp"
+          }
+        ]
+      },
+      {
+        "province_name": "Cagayan",
+        "capital": "Tuguegarao City",
+        "official_website": "https://cagayan.gov.ph",
+        "provincial_tourism_office": {
+          "phone": "+63 (78) 396-1218",
+          "email": "cagayantourism@gmail.com",
+          "facebook": "https://www.facebook.com/CagayanTourismOfficial"
+        },
+        "main_attractions": [
+          {
+            "name": "Callao Cave Protected Landscape",
+            "category": "Natural Cave System",
+            "location": "Peñablanca, Cagayan",
+            "contact_phone": "+63 917 800 1324",
+            "email": "penablancatourism@gmail.com",
+            "website": "https://cagayan.gov.ph",
+            "description": "A 7-chamber cave system featuring a natural cathedral rock formation inside.",
+            "image": "callao-cave.webp"
+          },
+          {
+            "name": "Palaui Island Protected Landscape and Seascape",
+            "category": "Ecotourism / Beach / Hiking",
+            "location": "Santa Ana, Cagayan",
+            "contact_phone": "+63 917 563 0141",
+            "email": "staanatourism@gmail.com",
+            "website": "https://cagayan.gov.ph",
+            "description": "Home to Cape Engaño Lighthouse, pristine white beaches, and rich marine biodiversity.",
+            "image": "palaui-island.webp"
+          },
+          {
+            "name": "Anguib Beach",
+            "category": "Beach / Coastal",
+            "location": "Santa Ana, Cagayan",
+            "contact_phone": "+63 917 836 2981",
+            "email": "anguibbeachresort@gmail.com",
+            "website": "https://cagayan.gov.ph",
+            "description": "Known as the 'Boracay of the North' with powdery white sand and turquoise waters.",
+            "image": "anguib-beach.webp"
+          },
+          {
+            "name": "Calvary Hills",
+            "category": "Pilgrimage Site",
+            "location": "Iguig, Cagayan",
+            "contact_phone": "+63 (78) 396-1218",
+            "email": "iguigtourism@gmail.com",
+            "website": "https://cagayan.gov.ph",
+            "description": "Sprawling rolling hills featuring giant life-sized Station of the Cross monuments.",
+            "image": "calvary-hills.webp"
+          }
+        ],
+        "popular_stays": [
+          {
+            "name": "Go Hotels Plus Tuguegarao",
+            "type": "City Hotel",
+            "location": "Tuguegarao City, Cagayan",
+            "phone": "+63 998 888 8888",
+            "email": "reservations@gohotels.com.ph",
+            "website": "https://www.gohotels.ph",
+            "facebook": "https://www.facebook.com/GoHotelsPH",
+            "description": "3-star contemporary hotel located at 12 1, Tuguegarao City, Cagayan",
+            "image": "go-hotel-plus.webp"
+          },
+          {
+            "name": "Hotel Carmelita",
+            "type": "Hotel & Business Center",
+            "location": "Tuguegarao City, Cagayan",
+            "phone": "+63 (78) 844-1022",
+            "email": "hotelcarmelita@yahoo.com",
+            "website": "https://www.hotelcarmelita.com.ph",
+            "facebook": "https://www.facebook.com/HotelCarmelitaTuguegarao",
+            "description": "2-star/3-star hotel located at #9 Diversion Road, Balzain, Tuguegarao City, Cagayan, Philippines.",
+            "image": "hotel-carmelita.webp"
+          },
+          {
+            "name": "Country Inn Hotel and Restaurant",
+            "type": "Beach Resort / Hotel",
+            "location": "Santa Ana, Cagayan",
+            "phone": "+63 917 508 2381",
+            "email": "countryinnstaana@gmail.com",
+            "website": "https://www.countryinnstaana.com",
+            "facebook": "https://www.facebook.com/CountryInnStaAna",
+            "description": "a 2.5- to 3-star beachfront property located in Brgy. Samuk-Samok, Centro, Santa Ana, Cagayan, Philippines.",
+            "image": "country-in-hotel.webp"
+          }
+        ],
+        "popular_eat_and_dine": [
+          {
+            "name": "Jomar's Batil Patung",
+            "type": "Local Eatery",
+            "location": "Tuguegarao City, Cagayan",
+            "phone": "+63 917 573 8921",
+            "email": "jomarsbatilpatung@gmail.com",
+            "website": "https://cagayan.gov.ph",
+            "facebook": "https://www.facebook.com/JomarsPancitBatilPatung",
+            "specialty": "Famous Tuguegarao Pancit Batil Patung",
+            "image": "jomar.webp"
+          },
+          {
+            "name": "Billy Jack's Cafe",
+            "type": "Casual Dining",
+            "location": "Tuguegarao City, Cagayan",
+            "phone": "+63 (78) 377-0134",
+            "email": "billyjackscafe@gmail.com",
+            "website": "https://cagayan.gov.ph",
+            "facebook": "https://www.facebook.com/BillyJacksCafe",
+            "specialty": "Carabao Milk Ice Cream and fusion local dishes",
+            "image": "billy.webp"
+          },
+          {
+            "name": "Jeyo's Panciteria",
+            "type": "Local Specialty Restaurant",
+            "location": "Tuguegarao City, Cagayan",
+            "phone": "+63 916 345 6789",
+            "email": "deospanciteria@gmail.com",
+            "website": "https://cagayan.gov.ph",
+            "facebook": "https://www.facebook.com/DeosPanciteriaOfficial",
+            "specialty": "Authentic Batil Patung noodles topped with minced beef and poqui-poqui",
+            "image": "jeyo.webp"
+          }
+        ]
+      },
+      {
+        "province_name": "Isabela",
+        "capital": "Ilagan City",
+        "official_website": "https://isabelaprovince.ph",
+        "provincial_tourism_office": {
+          "phone": "+63 (78) 323-0137",
+          "email": "isabelatourism@yahoo.com",
+          "facebook": "https://www.facebook.com/IsabelaTourismOffice"
+        },
+        "main_attractions": [
+          {
+            "name": "Ilagan Sanctuary & Japanese Tunnel",
+            "category": "Eco-Park & Historical Site",
+            "location": "Ilagan City, Isabela",
+            "contact_phone": "+63 (78) 624-2150",
+            "email": "ilagansanctuary@gmail.com",
+            "website": "https://isabelaprovince.ph",
+            "description": "Natural reserve with ziplines, caves, mini-zoo, and historic WWII Japanese tunnels.",
+            "image": "iligan-sanctuary.webp"
+          },
+          {
+            "name": "Tumauini Church (St. Matthias Parish)",
+            "category": "Historical / Heritage Church",
+            "location": "Tumauini, Isabela",
+            "contact_phone": "+63 917 500 4821",
+            "email": "tumauiniparish@gmail.com",
+            "website": "https://isabelaprovince.ph",
+            "description": "An 18th-century ultra-baroque red-brick church famous for its cylindrical bell tower.",
+            "image": "tamauini-church.webp"
+          },
+          {
+            "name": "Magat Dam Complex",
+            "category": "Infrastructure / Eco-Tourism Site",
+            "location": "Ramon, Isabela",
+            "contact_phone": "+63 (78) 323-0137",
+            "email": "magatdamtourism@gmail.com",
+            "website": "https://isabelaprovince.ph",
+            "description": "One of the largest multipurpose dams in Asia, ideal for viewing and water activities.",
+            "image": "magat-dam.webp"
+          }
+        ],
+        "popular_stays": [
+          {
+            "name": "The Maximilian Hotel",
+            "type": "Boutique Hotel",
+            "location": "Cauayan City, Isabela",
+            "phone": "+63 (78) 652-1888",
+            "email": "info@themaximilianhotel.com",
+            "website": "https://www.themaximilianhotel.com",
+            "facebook": "https://www.facebook.com/TheMaximilianHotel",
+            "image": "maximilian.webp"
+          },
+          {
+            "name": "Mango Suites Isabela",
+            "type": "City Hotel",
+            "location": "Santiago City, Isabela",
+            "phone": "+63 (78) 305-1825",
+            "email": "mangosuites.santiago@gmail.com",
+            "website": "https://www.mangosuites.com",
+            "facebook": "https://www.facebook.com/mangosuitessantiago",
+            "image": "mango-suite.webp"
+          },
+          {
+            "name": "Green Heights Park Resort",
+            "type": "Resort",
+            "location": "Ilagan City, Isabela",
+            "phone": "+63 917 574 3321",
+            "email": "greenheightsresort@gmail.com",
+            "website": "https://isabelaprovince.ph",
+            "facebook": "https://www.facebook.com/GreenHeightsParkResort",
+            "image": "green-heights.webp"
+          }
+        ],
+        "popular_eat_and_dine": [
+          {
+            "name": "Inasal d' Ilagan",
+            "type": "Local Diner",
+            "location": "Ilagan City, Isabela",
+            "phone": "+63 917 890 1234",
+            "email": "inasaldilagan@gmail.com",
+            "website": "https://isabelaprovince.ph",
+            "facebook": "https://www.facebook.com/InasaldIlaganOfficial",
+            "specialty": "Ilagan Longganisa (garlicky local sausage)",
+            "image": "inasal.webp"
+          },
+          {
+            "name": "Aling Cresing's Panciteria",
+            "type": "Noodle House",
+            "location": "Cabagan, Isabela",
+            "phone": "+63 927 654 3210",
+            "email": "alinglilings@gmail.com",
+            "website": "https://isabelaprovince.ph",
+            "facebook": "https://www.facebook.com/AlingLilingsPancitCabagan",
+            "specialty": "Pancit Cabagan (Isabela's signature thick egg noodle dish)",
+            "image": "aling-cresing.webp"
+          },
+          {
+            "name": "Chocolate 'N Berries Bakery & Restaurant",
+            "type": "Bakery & Restaurant",
+            "location": "Santiago City, Isabela",
+            "phone": "+63 (78) 305-2288",
+            "email": "chocolatenberries@gmail.com",
+            "website": "https://isabelaprovince.ph",
+            "facebook": "https://www.facebook.com/chocolatenberries",
+            "specialty": "Cakes, pastries, and modern local fusion dishes",
+            "image": "chocolate.webp"
+          }
+        ]
+      },
+      {
+        "province_name": "Nueva Vizcaya",
+        "capital": "Bayombong",
+        "official_website": "https://nuevavizcaya.gov.ph",
+        "provincial_tourism_office": {
+          "phone": "+63 (78) 321-2336",
+          "email": "nuevavizcayatourism@gmail.com",
+          "facebook": "https://www.facebook.com/NuevaVizcayaTourism"
+        },
+        "main_attractions": [
+          {
+            "name": "Capisaan Cave System",
+            "category": "Natural Cave / Adventure",
+            "location": "Kasibu, Nueva Vizcaya",
+            "contact_phone": "+63 917 592 1043",
+            "email": "capisaancave@gmail.com",
+            "website": "https://nuevavizcaya.gov.ph",
+            "description": "The fifth longest cave system in the Philippines with subterranean rivers and speleothems.",
+            "image": "capissan-cave.webp"
+          },
+          {
+            "name": "Lower Magat Eco-Tourism Park",
+            "category": "Nature Reserve & Eco-Park",
+            "location": "Diadi, Nueva Vizcaya",
+            "contact_phone": "+63 927 388 9120",
+            "email": "lowermagatecopark@gmail.com",
+            "website": "https://nuevavizcaya.gov.ph",
+            "description": "Sprawling environmental park offering camping, fishing, and log cabin rentals.",
+            "image": "eco-park.webp"
+          },
+          {
+            "name": "Imugan Waterfalls",
+            "category": "Waterfall / Trekking Site",
+            "location": "Santa Fe, Nueva Vizcaya",
+            "contact_phone": "+63 917 821 4456",
+            "email": "imugantourism@gmail.com",
+            "website": "https://nuevavizcaya.gov.ph",
+            "description": "Scenic waterfall surrounded by lush tribal landscapes in Santa Fe.",
+            "image": "imugan-waterfalls.webp"
+          }
+        ],
+        "popular_stays": [
+          {
+            "name": "Palaisdaan Hotel and Restaurant",
+            "type": "Resort / Hotel",
+            "location": "Bagabag, Nueva Vizcaya",
+            "phone": "+63 (78) 332-1234",
+            "email": "palaisdaanhotel@gmail.com",
+            "website": "https://nuevavizcaya.gov.ph",
+            "facebook": "https://www.facebook.com/PalaisdaanHotelAndRestaurant",
+            "image": "palaisdaan-hotel.webp"
+          },
+          {
+            "name": "Meaco Hotel Solano",
+            "type": "City Hotel",
+            "location": "Solano, Nueva Vizcaya",
+            "phone": "+63 917 843 6226",
+            "email": "meacohotel.solano@gmail.com",
+            "website": "https://www.meacohotel.com",
+            "facebook": "https://www.facebook.com/MeacoHotelSolano",
+            "image": "meaco-hotel.webp"
+          },
+          {
+            "name": "RVS Skyview and Nature Park",
+            "type": "Nature Resort / Mountain Hotel",
+            "location": "Aritao, Nueva Vizcaya",
+            "phone": "+63 917 501 9876",
+            "email": "rvsskyviewpark@gmail.com",
+            "website": "https://nuevavizcaya.gov.ph",
+            "facebook": "https://www.facebook.com/RVSSkyviewNaturePark",
+            "image": "skyview.webp"
+          }
+        ],
+        "popular_eat_and_dine": [
+          {
+            "name": "Palaisdaan Restaurant",
+            "type": "Floating Restaurant",
+            "location": "Bagabag, Nueva Vizcaya",
+            "phone": "+63 (78) 332-1234",
+            "email": "palaisdaandining@gmail.com",
+            "website": "https://nuevavizcaya.gov.ph",
+            "facebook": "https://www.facebook.com/PalaisdaanRestaurantBagabag",
+            "specialty": "Grilled Tilapia, catfish, and Filipino freshwater delicacies",
+            "image": "palaisdaan.webp"
+          },
+          {
+            "name": "Mrs. Baker's Restaurant & Pastry Shop",
+            "type": "Pastry Shop & Diner",
+            "location": "Bayombong, Nueva Vizcaya",
+            "phone": "+63 (917) 507-8999",
+            "email": "mrbakersrestaurant@gmail.com",
+            "website": "https://nuevavizcaya.gov.ph",
+            "facebook": "https://www.facebook.com/MrsBakersOfficial",
+            "specialty": "Citrus tarts and local baked delicacies",
+            "image": "mrs-baker-restaurant.webp"
+          },
+          {
+            "name": "Solano Boulevard Food Park",
+            "type": "Food Park",
+            "location": "Solano, Nueva Vizcaya",
+            "phone": "+63 917 123 4567",
+            "email": "solanofoodpark@gmail.com",
+            "website": "https://nuevavizcaya.gov.ph",
+            "facebook": "https://www.facebook.com/SolanoBoulevardFoodPark",
+            "specialty": "Street food, grilled meats, and local Vizcaya snacks",
+            "image": "solana-food-park.webp"
+          }
+        ]
+      },
+      {
+        "province_name": "Quirino",
+        "capital": "Cabarroguis",
+        "official_website": "https://quirinoprovince.org",
+        "provincial_tourism_office": {
+          "phone": "+63 917 519 2314",
+          "email": "quirinotourism@gmail.com",
+          "facebook": "https://www.facebook.com/QuirinoTourism"
+        },
+        "main_attractions": [
+          {
+            "name": "Governor's Rapids",
+            "category": "Eco-Adventure / River",
+            "location": "Maddela, Quirino",
+            "contact_phone": "+63 917 519 2314",
+            "email": "governorsrapids@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "description": "Famous for clear turquoise waters framed by high limestone cliffs, ideal for river tubing and canoeing.",
+            "image": "governor-rapid.webp"
+          },
+          {
+            "name": "Landingan Viewpoint",
+            "category": "Scenic Viewpoint",
+            "location": "Nagtipunan, Quirino",
+            "contact_phone": "+63 917 832 9011",
+            "email": "nagtipunan.tourism@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "description": "Offers panoramic mountain view vistas over the Nagtipunan river valleys.",
+            "image": "landingan.webp"
+          },
+          {
+            "name": "Aglipay Caves and Campsite",
+            "category": "Cave System / Eco-Park",
+            "location": "Aglipay, Quirino",
+            "contact_phone": "+63 927 410 5589",
+            "email": "aglipaycaves@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "description": "Network of 37 interlinked chambers surrounded by a protected forest park.",
+            "image": "aglipay-caves.webp"
+          }
+        ],
+        "popular_stays": [
+          {
+            "name": "Quirino Eco-Lodge",
+            "type": "Eco-Resort / Hotel",
+            "location": "Cabarroguis, Quirino",
+            "phone": "+63 917 519 2314",
+            "email": "quirinoecolodge@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "facebook": "https://www.facebook.com/QuirinoEcoLodge",
+            "image": "quirino.webp"
+          },
+          {
+            "name": "Capitol Plaza Hotel",
+            "type": "Government / Commercial Hotel",
+            "location": "Cabarroguis, Quirino",
+            "phone": "+63 (78) 692-5011",
+            "email": "capitolplazahotelquirino@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "facebook": "https://www.facebook.com/CapitolPlazaHotelQuirino",
+            "image": "capitol-plaza.webp"
+          },
+          {
+            "name": "Villa Diana Hotel & Resort",
+            "type": "Resort / Hotel",
+            "location": "Diffun, Quirino",
+            "phone": "+63 917 321 9876",
+            "email": "villadianaresort@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "facebook": "https://www.facebook.com/VillaDianaResortDiffun",
+            "image": "villa-diana.webp"
+          }
+        ],
+        "popular_eat_and_dine": [
+          {
+            "name": "Buddie's Place Restaurant",
+            "type": "Local Dining",
+            "location": "Maddela, Quirino",
+            "phone": "+63 917 519 2314",
+            "email": "buddiesplacek@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "facebook": "https://www.facebook.com/buddiesplace",
+            "specialty": "Freshwater fish delicacies and organic local dishes",
+            "image": "buddies-place.webp"
+          },
+          {
+            "name": "Diffun Food Terminal",
+            "type": "Local Food Market",
+            "location": "Diffun, Quirino",
+            "phone": "+63 927 123 9876",
+            "email": "diffunfoodterminal@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "facebook": "https://www.facebook.com/DiffunFoodTerminal",
+            "specialty": "Kakanin (rice cakes), fresh carabao dairy products, and grilled meats",
+            "image": "diffun-food-terminal.webp"
+          },
+          {
+            "name": "Landingan Viewpoint Cafe",
+            "type": "Viewpoint Coffee Shop",
+            "location": "Nagtipunan, Quirino",
+            "phone": "+63 917 832 9011",
+            "email": "landingancafe@gmail.com",
+            "website": "https://quirinoprovince.org",
+            "facebook": "https://www.facebook.com/LandinganViewpointCafe",
+            "specialty": "Local Quirino brewed coffee and snacks with a valley view",
+            "image": "landingan-cafe.webp"
+          }
+        ]
+      }
+    ]
+  }
+}

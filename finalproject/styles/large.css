@@ -1,0 +1,63 @@
+/* 9. RESPONSIVE MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--primary-blue);
+        padding: 1rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu.open {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .search-bar-container {
+            flex-direction: column;
+        }
+    }
+
+
+/* Responsive adjustment for small screens */
+@media screen and (max-width: 640px) {
+  .hero-widget {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 2rem auto 0 auto;
+    width: 90%;          /* Leaves a nice margin on the sides of mobile screens */
+    max-width: 400px;    /* Prevents it from getting too wide on tablets */
+    box-sizing: border-box;
+  }
+}
+
+
+/* RESPONSIVE LAYOUT (AUTOMATIC COLUMN COLLAPSE) */
+@media screen and (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

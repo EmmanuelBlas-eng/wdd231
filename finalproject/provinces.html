@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provinces &amp; Attractions | Explore Cagayan Valley</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Browse featured attractions, eco-tourism parks, and natural wonders across Batanes, Cagayan, Isabela, Nueva Vizcaya, and Quirino.">
+    <meta name="author" content="Emmanuel Blas Patanindagat Roberto">
+
+    <!-- Open Graph / Social Sharing Meta Tags -->
+    <meta property="og:title" content="Provinces &amp; Attractions | Explore Cagayan Valley">
+    <meta property="og:description" content="Plan your itinerary across Marlboro Hills, Callao Cave, Fuyot Springs, Lower Magat Eco-Park, and Governor's Rapid.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://emmanuelblas-eng.github.io/wdd231/finalproject/provinces.html">
+    <meta property="og:image" content="https://emmanuelblas-eng.github.io/wdd231/finalproject/images/callao-cave.webp">
+
+    <!-- Branding Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌄</text></svg>">
+
+    <!-- Preload the LCP hero background image for faster Largest Contentful Paint -->
+    <link rel="preload" as="image" fetchpriority="high" href="images/sabtang-island-batanes.webp">
+
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+
+
+    <script type="module" src="./scripts/provinces.js"></script>
+    <script type="module" src="./scripts/footer.js"></script>
+
+
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-box">
+                <span class="logo-icon">🌄</span>
+                <div class="logo-text">
+                    <span class="site-title">Explore Cagayan Valley</span>
+                    <span class="site-tagline">Region 2 Tourism Portal</span>
+                </div>
+            </a>
+            <button id="hamburger-menu" class="hamburger-btn" type="button" aria-label="Toggle Navigation Menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav id="primary-nav" class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="provinces.html" class="nav-link active" aria-current="page">Provinces &amp; Attractions</a></li>
+                    <li><a href="directory.html" class="nav-link">Stay &amp; Eat Directory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Provinces &amp; Attractions</h1>
+            <p>Discover natural wonders, historical sites, and eco-parks across Cagayan Valley.</p>
+        </div>
+        </section>
+
+    <main class="section-container">
+
+
+        <!-- Province Search Bar -->
+        <div class="search-bar-container">
+            <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="attraction-search" placeholder="Search by destination name, town, or category..." aria-label="Search Attractions">
+            </div>
+            <button type="button" class="btn-search" id="eat-search-btn">Search</button>
+        </div>
+
+        <!-- Province Filter Bar -->
+        <div class="province-filter-bar" id="province-filters">
+            <button type="button" class="province-btn active" data-province="all">All Provinces</button>
+            <button type="button" class="province-btn" data-province="Batanes">Batanes</button>
+            <button type="button" class="province-btn" data-province="Cagayan">Cagayan</button>
+            <button type="button" class="province-btn" data-province="Isabela">Isabela</button>
+            <button type="button" class="province-btn" data-province="Nueva Vizcaya">Nueva Vizcaya</button>
+            <button type="button" class="province-btn" data-province="Quirino">Quirino</button>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div class="destinations-grid" id="destinations-grid">
+            <!-- Dynamically populated via JavaScript -->
+        </div>
+
+        <!-- Empty State Message -->
+        <div id="no-results" class="no-results-message">
+            <h3>No destinations found</h3>
+            <p>Try adjusting your search query or province filter.</p>
+        </div>
+
+    </main>
+
+    <!-- Details Modal -->
+    <dialog id="attraction-modal" class="custom-modal" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+            <h3 id="modal-title">Attraction Title</h3>
+            <p class="modal-loc-text" id="modal-location">📍 Location</p>
+            <div id="modal-body" class="modal-body-text">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </dialog>
+
+
+    <dialog id="image-lightbox" class="lightbox-modal" aria-labelledby="lightbox-caption">
+        <button id="lightbox-close-btn" class="lightbox-close" type="button">&times;</button>
+        <img id="lightbox-img" src="./images/sabtang-island-batanes.webp" alt="" aria-describedby="lightbox-caption" width="640" height="420">
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+    </dialog>
+
+    <footer class="site-footer">
+        <!-- Dynamic 4-Column Grid -->
+        <div class="footer-container" id="dynamic-footer-grid"></div>
+
+    <!-- Bottom Copyright Bar -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="footer-year">2026</span> Explore Cagayan Valley <span class="divider">|</span> Author: Emmanuel Blas Patanindagat Roberto <span class="divider">|</span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

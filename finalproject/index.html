@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Cagayan Valley | Official Region 2 Tourism Portal</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover Northern Luzon's Cagayan Valley (Region 2). Plan your trip to Batanes, Cagayan, Isabela, Nueva Vizcaya, and Quirino with top eco-tours, landmarks, and travel guides.">
+    <meta name="author" content="Emmanuel Blas Patanindagat Roberto">
+
+    <!-- Open Graph / Social Sharing Meta Tags -->
+    <meta property="og:title" content="Explore Cagayan Valley | Official Region 2 Tourism Portal">
+    <meta property="og:description" content="Unveil rolling green hills, majestic caves, pristine rivers, and rich cultural traditions across Batanes, Cagayan, Isabela, Nueva Vizcaya, and Quirino.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://emmanuelblas-eng.github.io/wdd231/finalproject/index.html">
+    <meta property="og:image" content="https://emmanuelblas-eng.github.io/wdd231/finalproject/images/sabtang-island-batanes.webp">
+
+    <!-- Branding Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌄</text></svg>">
+
+    <!-- Preload the LCP hero background image for faster Largest Contentful Paint -->
+    <link rel="preload" as="image" fetchpriority="high" href="images/sabtang-island-batanes.webp">
+
+
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/slider.js"></script>
+    <script type="module" src="./scripts/footer.js"></script>
+    <script type="module" src="./scripts/widget.js"></script>
+
+    </head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-box">
+                <span class="logo-icon">🌄</span>
+                <div class="logo-text">
+                    <span class="site-title">Explore Cagayan Valley</span>
+                    <span class="site-tagline">Region 2 Tourism Portal</span>
+                </div>
+            </a>
+            <button id="hamburger-menu" class="hamburger-btn" type="button" aria-label="Toggle Navigation Menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav id="primary-nav" class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="provinces.html" class="nav-link">Provinces &amp; Attractions</a></li>
+                    <li><a href="directory.html" class="nav-link">Stay &amp; Eat Directory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+
+                <h1>Discover the Wonders of Cagayan Valley</h1>
+                <p>Experience pristine islands, majestic cave systems, emerald mountain passes, and vibrant heritage across Region 2.</p>
+                <a href="provinces.html" class="btn-cta">Explore Destinations</a>
+            </div>
+
+            <!-- Live Date, Time & Weather Badge -->
+            <div class="hero-widget" id="heroWidget">
+                <div class="widget-time-box">
+                    <span id="widget-date">Loading date...</span>
+                    <span id="widget-time" class="widget-time">--:--:-- --</span>
+                </div>
+                <div class="widget-weather-box">
+                    <span id="widget-weather-icon">🌤️</span>
+                    <div class="widget-weather-info">
+                        <span id="widget-temp">--°C</span>
+                        <span id="widget-location">Tuguegarao, Cagayan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <div class="section-header">
+                <h2>The 5 Gem Provinces</h2>
+                <p>Explore the unique beauty and culture of Northern Luzon's eastern paradise.</p>
+            </div>
+
+            <!-- Search / Filter Bar -->
+            <form class="search-bar-container" action="provinces.html" method="GET" role="search">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="search" 
+                        id="province-search-input"
+                        name="q"
+                        placeholder="Search provinces, caves, beaches..." 
+                        aria-label="Search destinations"
+                    >
+                </div>
+                <button type="submit" class="btn-search">Search</button>
+            </form>
+
+            <!-- Carousel Slider Container -->
+            <div class="carousel-wrapper">
+                <button type="button" class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous Slide">&larr;</button>
+
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="carouselTrack">
+
+                        <article class="summary-card ">
+                            <div class="card-image-wrapper">
+                                <img src="images/sabtang-island-batanes.webp" alt="Batanes scenery" width="1280" height="878" loading="lazy" decoding="async">
+                            </div>
+                            <div class="card-content">
+                                <h3>Batanes</h3>
+                                <p>Home of dramatic coastal cliffs, rolling pastures, and traditional Ivatan stone houses.</p>
+                                <a href="provinces.html?province=batanes" class="card-link">See Batanes &rarr;</a>
+                            </div>
+                        </article>
+
+                        <article class="summary-card">
+                            <div class="card-image-wrapper">
+                                    <img src="images/cagayan.webp" alt="Cagayan river and waterfall" width="1252" height="873" loading="lazy" decoding="async">
+                                </div>
+                            <div class="card-content">
+                                    <h3>Cagayan</h3>
+                                    <p>Famous for Callao Cave, pristine beaches, historical churches, and culinary delights.</p>
+                                    <a href="provinces.html?province=cagayan" class="card-link">See Cagayan &rarr;</a>
+                                </div>
+                        </article>
+
+                        <!-- Set Isabela as active by default -->
+                        <article class="summary-card active">
+                            <div class="card-image-wrapper">
+                                    <img src="images/isabela.webp" alt="Isabela historic monument and fountain" width="764" height="718" loading="lazy" decoding="async">
+                                </div>
+                            <div class="card-content">
+                                    <h3>Isabela</h3>
+                                    <p>The Queen Province offering eco-parks, historical monuments, and rich agriculture.</p>
+                                    <a href="provinces.html?province=isabela" class="card-link">See Isabela &rarr;</a>
+                                </div>
+                        </article>
+
+                        <article class="summary-card">
+                            <div class="card-image-wrapper">
+                                    <img src="images/nueva-viscaya.webp" alt="Nueva Vizcaya historic church facade" width="500" height="500" loading="lazy" decoding="async">
+                                </div>
+                            <div class="card-content">
+                                    <h3>Nueva Vizcaya</h3>
+                                    <p>The citrus capital of the region surrounded by lush pine forests and mountain trails.</p>
+                                    <a href="provinces.html?province=nueva-vizcaya" class="card-link">See Nueva Vizcaya &rarr;</a>
+                                </div>
+                        </article>
+
+                        <article class="summary-card">
+                            <div class="card-image-wrapper">
+                                    <img src="images/quirino.webp" alt="Quirino river gorge and rock formation" width="1120" height="847" loading="lazy" decoding="async">
+                                </div>
+                            <div class="card-content">
+                                    <h3>Quirino</h3>
+                                    <p>The forest heartland featuring turquoise river gorges and thrilling water adventures.</p>
+                                    <a href="provinces.html?province=quirino" class="card-link">See Quirino &rarr;</a>
+                                </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button type="button" class="carousel-btn next-btn" id="nextBtn" aria-label="Next Slide">&rarr;</button>
+            </div>
+
+            <!-- Navigation Indicators/Dots -->
+            <div class="carousel-dots" id="carouselDots"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <!-- Dynamic 4-Column Grid -->
+        <div class="footer-container" id="dynamic-footer-grid"></div>
+
+        <!-- Bottom Copyright Bar -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="footer-year">2026</span> Explore Cagayan Valley <span class="divider">|</span> Author: Emmanuel Blas Patanindagat Roberto <span class="divider">|</span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
