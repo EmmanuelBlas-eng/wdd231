@@ -31,7 +31,12 @@
 
     .search-bar-container {
             flex-direction: column;
+            align-items: stretch;
         }
+
+        .btn-search {
+    width: 100%;
+  }
     }
 
 
@@ -42,8 +47,8 @@
     bottom: auto;
     right: auto;
     margin: 2rem auto 0 auto;
-    width: 90%;          /* Leaves a nice margin on the sides of mobile screens */
-    max-width: 400px;    /* Prevents it from getting too wide on tablets */
+    width: 90%;          
+    max-width: 400px;    
     box-sizing: border-box;
   }
 }

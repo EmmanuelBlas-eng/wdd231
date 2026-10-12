@@ -85,7 +85,7 @@ body {
 .logo-icon {
   font-size: 2.2rem;
   line-height: 1;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  color: #ffffff;
 }
 
 .logo-text {
@@ -160,8 +160,6 @@ body {
 
 /* 5. HERO SECTION */
 .hero-section {
-  position: relative;
-  /* Dark gradient overlay + background image */
   background-image:
     linear-gradient(rgba(13, 27, 42, 0.65), rgba(26, 54, 93, 0.65)),
     url("../images/sabtang-island-batanes.webp");
@@ -171,6 +169,7 @@ body {
   color: var(--white);
   text-align: center;
   padding: 6rem 1.5rem;
+  background-color: #0d1b2a;
 }
 
 .hero-content {
@@ -680,13 +679,13 @@ body {
   margin-bottom: 0.25rem;
 }
 
+
 .card-desc {
   font-size: 0.8rem;
   color: var(--text-dark);
   line-height: 1.3;
   display: -webkit-box;
-  line-clamp: 2;
-  -webkit-line-clamp: 2; /* Limits description to 2 lines max */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 0.4rem;
@@ -1017,7 +1016,7 @@ body {
 
 .footer-bottom .divider {
   margin: 0 0.5rem;
-  color: #4a5568;
+  color: #a0aec0;
 }
 
 #dynamic-footer-grid .footer-col p a {
