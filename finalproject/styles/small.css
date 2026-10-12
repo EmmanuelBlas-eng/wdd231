@@ -160,6 +160,7 @@ body {
 
 /* 5. HERO SECTION */
 .hero-section {
+  position: relative; 
   background-image:
     linear-gradient(rgba(13, 27, 42, 0.65), rgba(26, 54, 93, 0.65)),
     url("../images/sabtang-island-batanes.webp");
@@ -169,6 +170,7 @@ body {
   color: var(--white);
   text-align: center;
   padding: 6rem 1.5rem;
+  background-color: #0d1b2a;
 }
 
 .hero-content {
@@ -223,11 +225,6 @@ body {
 /* =======================
    WIDGET STYLING
    ======================= */
-
-.hero-section {
-  position: relative; /* Container context for absolute widget */
-  padding-bottom: 5rem; /* Ensures enough space below CTA */
-}
 
 /* BOTTOM RIGHT HERO WIDGET */
 .hero-widget {
@@ -1015,7 +1012,7 @@ body {
 
 .footer-bottom .divider {
   margin: 0 0.5rem;
-  color: #a0aec0;
+  color: #4a5568;
 }
 
 #dynamic-footer-grid .footer-col p a {
