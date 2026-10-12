@@ -30,41 +30,52 @@
     updateClock();
     setInterval(updateClock, 1000);
 
-    // 2. Weather WMO Code to Icon Mapping
-    function getWeatherIcon(code) {
-        if (code === 0) return '☀️'; // Clear
-        if (code >= 1 && code <= 3) return '🌤️'; // Partly cloudy
-        if (code >= 45 && code <= 48) return '🌫️'; // Fog
-        if (code >= 51 && code <= 67) return '🌧️'; // Drizzle / Rain
-        if (code >= 80 && code <= 82) return '🌦️'; // Showers
-        if (code >= 95) return '⛈️'; // Thunderstorm
-        return '☀️';
+    // 2. OpenWeatherMap Weather Icon Mapper
+    function getWeatherIcon(iconCode) {
+       if (iconCode.startsWith('01')) return '☀️'; // clear sky
+        if (iconCode.startsWith('02') || iconCode.startsWith('03')) return '🌤️'; // few/scattered clouds
+        if (iconCode.startsWith('04')) return '☁️'; // broken/overcast clouds
+        if (iconCode.startsWith('09') || iconCode.startsWith('10')) return '🌧️'; // rain
+        if (iconCode.startsWith('11')) return '⛈️'; // thunderstorm
+        if (iconCode.startsWith('13')) return '❄️'; // snow
+        if (iconCode.startsWith('50')) return '🌫️'; // mist/fog
+        return '🌤️';
     }
 
-    // 3. Fetch Live Weather via Open-Meteo API
+
+    //3. Fetch Live Weather
+   
+    const apiKey = 'cc50dea41789f5172d4fcb652f4e2b14'
+    const lat = 17.6131; // Tuguegarao, Cagayan
+    const lon = 121.7270;
+    const url = (`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`);
+
     async function fetchWeather() {
         try {
-            const lat = 17.6132; // Tuguegarao, Cagayan
-            const lon = 121.7270;
-            const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
-            if (!res.ok) throw new Error(`Weather request failed with status ${res.status}`);
+            const response = await fetch(url);
+            if (response.ok) {
+                const data = await response.json();
 
-            const data = await res.json();
+                const temp = Math.round(data.main.temp);
+                const iconCode = data.weather[0].icon;
 
-            if (!data.current_weather) throw new Error('Weather data is unavailable.');
-
-            const temp = Math.round(data.current_weather.temperature);
-            const code = data.current_weather.weathercode;
-
-            tempEl.textContent = `${temp}°C`;
-            iconEl.textContent = getWeatherIcon(code);
-        } catch (err) {
-            tempEl.textContent = '29°C'; // Fallback display
-            iconEl.textContent = '🌤️';
+                tempEl.textContent = `${temp}°C`;
+                iconEl.textContent = getWeatherIcon(iconCode);
+            } else {
+                throw new Error(await response.text());
+            }
+        } catch (error) {
+            console.log("Weather Fetch Error:", error);
+            tempEl.textContent = '33°C'; // Fallback display
+            iconEl.textContent = '☀️';
         }
     }
 
     fetchWeather();
     setInterval(fetchWeather, 600000); // Refresh weather every 10 minutes
 });
+    
+
+
+
 
