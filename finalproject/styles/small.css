@@ -263,7 +263,7 @@ body {
 .widget-time {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #68d391; /* Accent green match */
+  color: #68d391; 
   font-family: monospace, monospace;
 }
 
@@ -471,8 +471,8 @@ body {
   background-color: var(--bg-card, #ffffff);
   border: 1px solid var(--border-gray, #e2e8f0);
   border-radius: 12px;
-  padding: 0; /* Remove padding for borderless top/sides */
-  overflow: hidden; /* Clips image against top-left and top-right card borders */
+  padding: 0; 
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -502,7 +502,7 @@ body {
   height: 180px;
   margin: 0;
   background-color: #f1f5f9;
-  overflow: hidden; /* Ensures zoomed image stays inside the container boundaries */
+  overflow: hidden; 
 }
 
 /* BASE IMAGE STYLES & TRANSITION */
@@ -513,13 +513,13 @@ body {
   display: block;
   transition:
     transform 0.4s ease,
-    filter 0.4s ease; /* Smooth hover transition */
+    filter 0.4s ease; 
 }
 
 /* HOVER EFFECT ON CARD FOCUS / HOVER */
 .summary-card:hover .card-image-wrapper img {
-  transform: scale(1.08); /* Smooth subtle zoom in */
-  filter: brightness(1.05); /* Slight illumination */
+  transform: scale(1.08); 
+  filter: brightness(1.05); 
 }
 
 /* CONTENT PADDING */
@@ -593,7 +593,7 @@ body {
   grid-template-columns: repeat(
     auto-fill,
     minmax(320px, 1fr)
-  ); /* Fits 3-4 per row on desktop */
+  ); 
   gap: 1rem;
 }
 
@@ -601,8 +601,8 @@ body {
 .eat-card,
 .stay-card {
   display: flex;
-  flex-direction: row; /* Horizontal alignment */
-  height: 130px; /* Low fixed/max height */
+  flex-direction: row; 
+  height: 130px;
   overflow: hidden;
   background-color: var(--bg-card);
   border: 1px solid var(--border-gray);
@@ -619,24 +619,22 @@ body {
 }
 
 .card-media {
-  flex: 0 0 110px; /* Fixed left-column width */
-  height: 100%; /* Matches card height */
+  flex: 0 0 110px;
+  height: 100%; 
   position: relative;
   background-color: #dbe2ea;
-
-  /* Center both images and fallback icons/emojis */
   display: flex;
-  align-items: center; /* Vertical centering */
-  justify-content: center; /* Horizontal centering */
-  overflow: hidden; /* Crops overflowing image edges */
+  align-items: center; 
+  justify-content: center;
+  overflow: hidden;
 }
 
 /* Image inside the container */
 .card-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Fills box while maintaining ratio */
-  object-position: center; /* Anchors center of image */
+  object-fit: cover; 
+  object-position: center; 
   display: block;
 }
 
@@ -655,7 +653,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 0; /* Prevents text overflow */
+  min-width: 0;
 }
 
 .card-body h3 {
@@ -665,7 +663,7 @@ body {
   line-height: 1.2;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; /* Truncates extra long titles cleanly */
+  text-overflow: ellipsis; 
 }
 
 .card-location {
@@ -716,19 +714,14 @@ body {
 
 /* LIGHTBOX DIALOG OVERRIDES */
 #image-lightbox {
-  /* 1. FORCE CENTER POSITIONING */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0; /* Clear browser default modal margins */
-
-  /* 2. UNIFORM POP-UP SIZE */
+  margin: 0;
   width: 90vw;
-  max-width: 650px; /* Fixed maximum width for all images */
-  height: 480px; /* Fixed height for uniformity */
-
-  /* Container Styling */
+  max-width: 650px; 
+  height: 480px; 
   border: none;
   border-radius: 12px;
   padding: 0;
@@ -739,17 +732,16 @@ body {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Backdrop Dimmer */
+
 #image-lightbox::backdrop {
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(4px);
 }
 
-/* UNIFORM IMAGE CONTAINER */
 #image-lightbox img {
   width: 100%;
-  height: 420px; /* Exact uniform image height across all popups */
-  object-fit: cover; /* Crops nicely without stretching tall/wide photos */
+  height: 420px; 
+  object-fit: cover; 
   object-position: center;
   display: block;
 }
@@ -1012,7 +1004,7 @@ body {
 
 .footer-bottom .divider {
   margin: 0 0.5rem;
-  color: #4a5568;
+  color:#a0aec0;;
 }
 
 #dynamic-footer-grid .footer-col p a {
