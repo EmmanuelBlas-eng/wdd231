@@ -30,17 +30,19 @@
     updateClock();
     setInterval(updateClock, 1000);
 
-    // 2. OpenWeatherMap Weather Icon Mapper
+   // 2. OpenWeatherMap Weather Icon Mapper
     function getWeatherIcon(iconCode) {
-       if (iconCode.startsWith('01')) return '☀️'; // clear sky
-        if (iconCode.startsWith('02') || iconCode.startsWith('03')) return '🌤️'; // few/scattered clouds
-        if (iconCode.startsWith('04')) return '☁️'; // broken/overcast clouds
-        if (iconCode.startsWith('09') || iconCode.startsWith('10')) return '🌧️'; // rain
-        if (iconCode.startsWith('11')) return '⛈️'; // thunderstorm
-        if (iconCode.startsWith('13')) return '❄️'; // snow
-        if (iconCode.startsWith('50')) return '🌫️'; // mist/fog
-        return '🌤️';
-    }
+    const isNight = iconCode.endsWith('n');
+
+    if (iconCode.startsWith('01')) return isNight ? '🌙' : '☀️'; // clear sky
+    if (iconCode.startsWith('02') || iconCode.startsWith('03')) return isNight ? '☁️' : '🌤️'; // clouds
+    if (iconCode.startsWith('04')) return '☁️'; // broken/overcast clouds
+    if (iconCode.startsWith('09') || iconCode.startsWith('10')) return isNight ? '🌧️' : '🌧️'; // rain (can use 🌧️ or add a night rain variant if preferred)
+    if (iconCode.startsWith('11')) return '⛈️'; // thunderstorm
+    if (iconCode.startsWith('13')) return '❄️'; // snow
+    if (iconCode.startsWith('50')) return '🌫️'; // mist/fog
+    return isNight ? '🌙' : '🌤️';
+}
 
 
     //3. Fetch Live Weather
